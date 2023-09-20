@@ -36,7 +36,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'background-color': '#F85559',
+                'color-primary': '#F85559',
               }
             }
           }
@@ -44,10 +44,10 @@
       </script>
 </head>
 <body class="poppins-font">
-    <header>
+    <header class="md:container md:mx-auto">
         <!-- NavBar Section -->
-        <nav class="md:container mx-auto my-12 ">
-            <div class="flex p-8 lg:bg-background-color rounded-full">
+        <nav class="my-12">
+            <div class="flex p-8 lg:bg-color-primary rounded-full">
                 <div class="w-2/5 hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-white">
                     <li class="text-lg font-medium"><a>Home</a></li>
@@ -64,7 +64,7 @@
                     <div class=" lg:hidden">
                         <div class="dropdown ">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                             </label>
                             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                               <li><a>Home</a></li>
@@ -88,12 +88,21 @@
         <!-- NavBar Section -->
 
         <!-- Banner Section -->
-        <section class="container md:container mx-auto my-12">
-            <div class="carousel w-full">
+            <div class="carousel w-full lg:h-[600px]">
 
                 <!-- Slide1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="images/banner1.png" class="w-full" />
+                  <!-- Customized image -->
+                  <div class="w-full">
+                  <div class='bg-[url("images/banner1.png")] object-cover h-full w-full bg-cover bg-center p-12'>
+                  <h2 class="text-7xl text-center text-white font-extrabold mt-10">Exotic tastes at your <br> doorstep</h2>
+                  <p class="mt-6 mb-12 text-xl font-medium text-center text-white">We supply highly quality organic products</p>
+                  <div class="text-center">
+                    <button class="bg-color-primary p-4 rounded-lg text-white">Shop Now</button>
+                  </div>
+                </div>
+                </div>
+                 <!-- Customized image -->
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
@@ -103,7 +112,17 @@
 
                 <!-- Slide2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="images/banner2.png" class="w-full" />
+                  <!-- Customized image -->
+                  <div class="w-full">
+                    <div class='bg-[url("images/banner2.png")] object-cover h-full w-full bg-cover bg-center p-12'>
+                    <h2 class="text-7xl text-center text-white font-extrabold mt-10">Exotic tastes at your <br> doorstep</h2>
+                    <p class="mt-6 mb-12 text-xl font-medium text-center text-white">We supply highly quality organic products</p>
+                    <div class="text-center">
+                      <button class="bg-color-primary p-4 rounded-lg text-white">Shop Now</button>
+                    </div>
+                  </div>
+                  </div>
+                   <!-- Customized image -->
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
                     <a href="#slide3" class="btn btn-circle">❯</a>
@@ -113,7 +132,17 @@
 
                 <!-- Slide3 -->
                 <div id="slide3" class="carousel-item relative w-full">
-                  <img src="images/banner3.png" class="w-full" />
+                  <!-- Customized image -->
+                  <div class="w-full">
+                    <div class='bg-[url("images/banner3.png")] object-cover h-full w-full bg-cover bg-center p-12'>
+                      <h2 class="text-7xl text-center text-white font-extrabold mt-10">Exotic tastes at your <br> doorstep</h2>
+                      <p class="mt-6 mb-12 text-xl font-medium text-center text-white">We supply highly quality organic products</p>
+                      <div class="text-center">
+                        <button class="bg-color-primary p-4 rounded-lg text-white">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Customized image -->
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <a href="#slide4" class="btn btn-circle">❯</a>
@@ -123,7 +152,17 @@
 
                 <!-- Slide4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                  <img src="images/banner4.png" class="w-full" />
+                <!-- Customized image -->
+                  <div class="w-full">
+                    <div class='bg-[url("images/banner4.png")] object-cover h-full w-full bg-cover bg-center p-12'>
+                    <h2 class="text-7xl text-center text-white font-extrabold mt-10">Exotic tastes at your <br> doorstep</h2>
+                    <p class="mt-6 mb-12 text-xl font-medium text-center text-white">We supply highly quality organic products</p>
+                    <div class="text-center">
+                    <button class="bg-color-primary p-4 rounded-lg text-white">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Customized image -->
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
                     <a href="#slide1" class="btn btn-circle">❯</a>
@@ -132,7 +171,6 @@
                 <!-- Slide4 -->
 
               </div>
-        </section>
         <!-- Banner Section -->
     </header>
     <main>
